@@ -3551,7 +3551,7 @@ completion."
                  (split-string
                   (buffer-substring-no-properties
                    (line-beginning-position) (point-min))
-                  "[ \f\t\n\r\v()]+" t)
+                  "[\f\t\n\r\v()]+" t)
                  :test #'string=))))
         (set-process-filter process original-filter-fn)))))
 
